@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 #import
 import librosa
@@ -17,9 +15,6 @@ import soundfile as sf
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 from datetime import date
 from expertai.nlapi.cloud.client import ExpertAiClient         #Expert.ai variables and import
-
-
-# In[2]:
 
 
 # Import Wav2Vec Model and Processor
@@ -50,9 +45,6 @@ Path(resampled_folder).mkdir(parents = True, exist_ok = True)       #it creates 
 extension_to_convert = ['.mp3','.mp4','.m4a','.flac','.opus']       #list of extension
 
 
-# In[3]:
-
-
 #Preprocessing function
 def preprocessing(path_base, path_converted_audio):
     for file in os.listdir(path_base):
@@ -80,9 +72,6 @@ def resample(file, sr):
     resampled_path = os.path.join(resampled_folder,file)            #resampled_folder + file
     print(file + " resampled at " + str(sr) + "kHz")
     return resampled_path, length
-
-
-# In[4]:
 
 
 #Transcript function
@@ -119,14 +108,6 @@ def generate_transcription(speech, processor, model):
     return transcription.lower()
 
 
-# In[ ]:
-
-
-
-
-
-# In[5]:
-
 
 #NLU Analysis
 def text_analysis(transcript, language, audio_report, file, length):
@@ -159,8 +140,6 @@ def text_analysis(transcript, language, audio_report, file, length):
     return report
 
 
-# In[6]:
-
 
 def speech_to_data():
     
@@ -175,15 +154,8 @@ def speech_to_data():
     shutil.rmtree(path_converted_audio)
 
 
-# In[7]:
-
 
 #Run the Speech To Data
 speech_to_data()  
-
-
-# In[ ]:
-
-
 
 

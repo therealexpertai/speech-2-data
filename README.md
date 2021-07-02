@@ -49,6 +49,8 @@ We have done all the steps necessary to get data from an audio file. Finally, le
 
 SPEECH_TO_DATA
 
+https://gist.github.com/SamuelAlgheriniAI/d31a98b62d715ca8e03895f67c06cc83
+
 Speech_to_data is the function that drives the execution of the entire workflow. In other words, this is the one function we call to get data out of an audio file.
  
 This function triggers the preprocessing function, that creates a folder with all converted files ready to be analyzed, and then iterates through every file. It resamples the file, then transcribes it, analyzes the text and generates the report. The last line of code removes the now useless path_converted_audio folder.

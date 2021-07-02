@@ -9,6 +9,8 @@ First thing the script does is importing all the necessary libraries and model, 
  
 https://gist.github.com/SamuelAlgheriniAI/b3fcddb1c776229aed1869295b1841c9
 
+https://gist.github.com/SamuelAlgheriniAI/47eafe84b1029e09c78aa45f85eef561
+
 There are plenty of Wav2Vec models on HuggingFace. I chose the “base-960h” because it is a good compromise between quality and weight structure. Write the path for your audio files in “path_base”. Leave the variable sr at 16000 (this is the sampling rate). You can also choose a different block length, depending on your CPU and RAM capabilities: I set it at 30 (the unit is seconds). Insert your expert.ai developer portal email and password in their respective variables. Then write the folders names you prefer for the conversion, resampling and final report. The program will create those paths for you (mkdir). You can increase the extension_to_convert list adding more extensions, if necessary.
 
 PREPROCESSING

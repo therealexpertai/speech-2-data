@@ -155,7 +155,7 @@ def speech_to_data():
 
 
 
-#Run the Speech To Data
+#Run Speech-2-Data module
 speech_to_data()  
 
 

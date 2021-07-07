@@ -132,10 +132,10 @@ def text_analysis(transcript, language, audio_report, file, length):
             
     #Write the report to a text file
     filepath = os.path.join(audio_report,file)
-    text = open(filepath + ".txt","w")
+    text = open(filepath[:-4] + ".txt","w")
     text.write(report)
     text.close()
-    print("\nReport stored at " + filepath + ".txt")
+    print("\nReport stored at " + filepath[:-4] + ".txt")
     return report
 
 

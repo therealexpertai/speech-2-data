@@ -1,5 +1,5 @@
 # speech-2-data
-### Find the full article at insert_the_URL
+### Find the full article at https://salgherini.medium.com/how-to-get-reports-from-audio-files-using-speech-recognition-and-nlp-b49c20a24488
 
 This script transcribes a speech into a text, analyzes it and then it writes the report in a txt file.
 

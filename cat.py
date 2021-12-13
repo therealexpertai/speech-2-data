@@ -1,2 +1,0 @@
-import os
-bye bue

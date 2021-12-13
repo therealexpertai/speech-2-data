@@ -1,2 +1,0 @@
-Import os
-ye bue

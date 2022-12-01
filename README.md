@@ -60,7 +60,7 @@ This function triggers the preprocessing function, that creates a folder with al
 I enjoyed writing this code. Thanks to open source, Facebook AI, HuggingFace, and expert.ai, I have been able to get data from audio files just by using my home computer. And the list of potential applications I see is endless.
 
 ## WEB APP
-We also have the entire codebase wrapped as a web application as well built using the [Streamlit framework](https://streamlit.io/) which can be used by end users for directly uploading their audio files of different formats and download the generated transcripts or text analysis reports. You can find the entire webapp codebase [here.](https://github.com/prateekralhan/speech-2-data-expert.ai-streamlit)
+There is even more! Thanks to [Prateek](https://github.com/prateekralhan) this entire flow has become a web application that can be used by end users to generate the audio file report. You can find the entire webapp codebase [here.](https://github.com/prateekralhan/speech-2-data-expert.ai-streamlit)
 
 ![demo](https://user-images.githubusercontent.com/29462447/202572086-c13b6ba8-0492-4a97-ac6c-51eb48c642c9.gif)
 
